@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Launch School HTML/CSS assement</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="assets/LS_HTMLCSS_Assessment.css">
+  </head>
+    <body>
+
+      <input type="checkbox" id="toggle">
+      <div class="column">
+        
+
+        <main>
+
+
+
+          <div id="hamburger">
+            <label for="toggle">
+                <img src="assets/icon_hamburger.png" alt="hamburger icon">
+          </label>
+          </div>
+
+          <h1>02/16</h1>
+
+          <table>
+            <tbody>
+              <tr>
+                <td class="small"><a href="#">+</a></td>
+                <td class="left"><a href="#">Add new to do</a></td>
+                <td class="right"></td>
+              </tr>
+
+              <tr>
+                <td class="small">
+                  <img src="assets/icon_checkbox_table.png" alt="checkbox">
+                </td>
+                <td class="left">
+                  <label for="mod_check">
+                    Item 1
+                  </label>
+                </td>
+                <td class="right"><img src="assets/icon_trash.png" alt="trash icon"></td>
+              </tr>
+
+              <tr>
+                <td class="small">
+                  <img src="assets/icon_checkbox_table.png" alt="checkbox">
+                </td>
+                <td class="left"><a href="#">Item 2</a></td>
+                <td class="right"><img src="assets/icon_trash.png" alt="trash icon"></td>
+              </tr>
+
+
+              <tr class="active">
+                <td class="small">
+                  <img src="assets/icon_checkbox_table_checked.png" alt="checkbox">
+                </td>
+                <td class="left">Item 3</td>
+                <td class="right"><img src="assets/icon_trash.png" alt="trash icon"></td>
+              </tr>
+
+              <tr class="active">
+                <td class="small">
+                  <img src="assets/icon_checkbox_table_checked.png" alt="checkbox">
+                </td>
+                <td class="left">Item 4</td>
+                <td class="right"><img src="assets/icon_trash.png" alt="trash icon"></td>
+              </tr>
+
+              <tr class="active">
+                <td class="small">
+                  <img src="assets/icon_checkbox_table_checked.png" alt="checkbox">
+                </td>
+                <td class="left">Item 5</td>
+                <td class="right"><img src="assets/icon_trash.png" alt="trash icon"></td>
+              </tr>
+
+              <tr>
+                <td class="small">
+                  <img src="assets/icon_checkbox_table.png" alt="checkbox">
+                </td>
+                <td class="left">Item 6</td>
+                <td class="right"><img src="assets/icon_trash.png" alt="trash icon"></td>
+              </tr>
+
+              <tr>
+                <td class="small">
+                  <img src="assets/icon_checkbox_table.png" alt="checkbox">
+                </td>
+                <td class="left">Item 7</td>
+                <td class="right"><img src="assets/icon_trash.png" alt="trash icon"></td>
+              </tr>
+
+              <tr>
+                <td class="small">
+                  <img src="assets/icon_checkbox_table.png" alt="checkbox">
+                </td>
+                <td class="left">Item 8</td>
+                <td class="right"><img src="assets/icon_trash.png" alt="trash icon"></td>
+              </tr>
+
+              <tr>
+                <td class="small">
+                  <img src="assets/icon_checkbox_table.png" alt="checkbox">
+                </td>
+                <td class="left">Item 9</td>
+                <td class="right"><img src="assets/icon_trash.png" alt="trash icon"></td>
+              </tr>
+
+
+            </tbody>
+            
+          </table>
+
+          <input type="checkbox" id="mod_check">
+    <div class="modal">
+      <form action="" method="post">
+        <fieldset>
+
+          <dl>
+            <dt>
+              <label for="title">Title</label>
+            </dt>
+            <dd>
+              <input type="text" name="title" id="title" placeholder="Item 2">
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <label for="date">Due Date</label>
+            </dt>
+            <dd>
+              <select name="day">
+                  <optgroup label="day">
+                    <option>Day</option>
+                   <option selected>16</option>
+                 </optgroup>
+              </select>/
+              <select name="month">
+                  <optgroup label="Month">
+                    <option>Month</option>
+                   <option>February</option>
+                 </optgroup>
+              </select>/
+              <select name="year">
+                <optgroup label="Year">
+                  <option>Year</option>
+                </optgroup>
+              </select>
+            </dd>
+          </dl>
+
+
+          <dl>
+            <dt>
+              <label for="description">Description</label>
+            </dt>
+            <dd>
+              <textarea placeholder="Description"></textarea>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt></dt>
+            <dd>
+              <input type="submit" value="Save">
+              <input type="submit" value="Mark As Complete">
+            </dd>
+          </dl>
+        </fieldset>
+
+  
+      </form>
+    </div>
+
+ 
+        </main>
+
+        <header>
+
+
+          <nav>
+            <dl id="todo">
+              <dt>All Todos</dt>
+              <dd class="num_8">02/16</dd>
+              <dd class="num_2">03/16</dd>
+              <dd class="num_1">04/16</dd>
+              <dd class="num_1">05/16</dd>
+              <dd class="num_6">06/16</dd>
+            </dl>
+          </nav>
+
+          <nav>
+            <dl id="completed">
+              <dt>Completed</dt>
+              <dd>02/15</dd>
+              <dd>03/15</dd>
+              <dd>04/15</dd>
+              <dd>05/15</dd>
+              <dd>06/14</dd>
+            </dl>
+          </nav>
+        
+        </header>
+
+      </div>
+    </body>
+</html> 
