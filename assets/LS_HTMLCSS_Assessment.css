@@ -81,6 +81,7 @@ a {
   clear: both;
 }
 
+
 /*   HEADER   */
 
 header {
@@ -256,17 +257,29 @@ input#mod_check {
 }
 
 div.modal {
+  visibility: hidden;
   position: absolute;
   top: 110px;
   left: 100px;
   background: #fff;
   box-sizing: border-box;
   padding: 35px 30px;
-  visibility: hidden;
+  z-index: 100;
 }
 
-input#mod_check:checked + div.modal {
+input#mod_check:checked + figure + div.modal {
   visibility: visible;
+}
+
+input#mod_check:checked + figure:before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: rgba(0, 0, 0, .4);
+  z-index: 0;
 }
 
 div.modal dt,
@@ -298,6 +311,23 @@ div.modal input[type="submit"] {
   color: #fff;
   border: none;
   font-size: 16px;
+}
+
+select {
+   border: 0;
+   outline: 0;
+   background: transparent;
+   width: 130px;
+  }
+
+div.select {
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+dl dd,
+dl dt {
+  margin: 12px 0;
 }
 
 /*   BREAK POINTS   */
