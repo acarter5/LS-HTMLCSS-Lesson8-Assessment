@@ -267,6 +267,7 @@ div.modal {
   display: none;
   font-size: 16px;
   height: 400px;
+  width: 576px;
 }
 
 input#mod_check:checked + figure div.modal {
