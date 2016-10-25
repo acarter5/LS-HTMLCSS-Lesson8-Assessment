@@ -89,7 +89,7 @@ header {
   top: 0;
   left: 0;
   width: 335px;
-  height: 100vh;
+  height: 120vh;
   margin-left: -335px;
   box-sizing: border-box;
   background-color: #464f77;
@@ -262,9 +262,11 @@ div.modal {
   left: 100px;
   background: #fff;
   box-sizing: border-box;
-  padding: 35px 30px;
+  padding: 40px 40px 40px 32px;
   z-index: 100;
   display: none;
+  font-size: 16px;
+  height: 400px;
 }
 
 input#mod_check:checked + figure div.modal {
@@ -285,7 +287,41 @@ input#mod_check:checked + figure:before {
 div.modal dt,
 div.modal dd {
   display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
   vertical-align: top;
+}
+
+div.modal form {
+  display: inline-block;
+}
+
+div.fieldset {
+  display: inline-block;
+}
+
+div.modal fieldset {
+  display: inline-block;
+}
+
+dl.title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+div.modal dl.due_date {
+  margin-bottom: 14px; 
+}
+
+dl.submit {
+  margin-top: -5px;
+}
+
+
+
+div.modal dl.submit dt,
+div.modal dl.submit dd {
+  margin: 0;
 }
 
 div.modal dt {
@@ -293,15 +329,29 @@ div.modal dt {
 }
 
 div.modal input[type="text"],
+div.modal textarea,
+div.modal select {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+div.modal input[type="text"],
 div.modal textarea {
-  width: 400px;
-  padding: 12px;
+  width: 396px;
+  padding: 10px;
   border: 1px solid #ccc;
+  display: inline;
+}
+
+div.modal input[type="text"] {
+  height: 36px;
 }
 
 div.modal textarea {
   height: 144px;
   resize: none;
+  padding: 10px;
+  margin: 0;
 }
 
 div.modal input[type="submit"] {
@@ -311,24 +361,43 @@ div.modal input[type="submit"] {
   color: #fff;
   border: none;
   font-size: 16px;
+  border-radius: 5px;
+  margin: 0 4px 0 0;
 }
-
+div.modal p {
+  display: inline;
+}
 select {
    border: 0;
    outline: 0;
    background: transparent;
-   width: 130px;
+   width: 85px;
+   color: #ccc;
   }
 
 div.select {
-  border: 1px solid #ccc;
-  display: inline-block;
+    border: 1px solid #ccc;
+    display: inline;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 12px;
 }
 
-dl dd,
-dl dt {
-  margin: 12px 0;
+div.modal input[type="text"] {
+  padding: 10px;
 }
+
+div.modal div.select:last-of-type {
+  margin-right: 0;
+}
+
+div.modal div.select:first-of-type {
+  margin-left: 0;
+}
+
+
+
+
 
 /*   BREAK POINTS   */
 

@@ -45,9 +45,10 @@
 
                         
                           <form action="" method="post">
+                            <div>
                             <fieldset>
 
-                              <dl>
+                              <dl class="title">
                                 <dt>
                                   <label for="title">Title</label>
                                 </dt>
@@ -56,19 +57,19 @@
                                 </dd>
                               </dl>
 
-                              <dl>
+                              <dl class="due_date">
                                 <dt>
                                   <label for="date">Due Date</label>
                                 </dt>
                                 <dd>
-                                  <div class="select">
+                                  <div class="select first">
                                     <select name="day">
                                         <optgroup label="day">
                                           <option>Day</option>
                                          <option selected>16</option>
                                        </optgroup>
                                     </select>
-                                  </div> /
+                                  </div>  <p> / </p>  
                                   <div class="select"> 
                                     <select name="month">
                                         <optgroup label="Month">
@@ -76,8 +77,8 @@
                                          <option>February</option>
                                        </optgroup>
                                     </select>  
-                                   </div> /
-                                   <div class="select"> 
+                                   </div>  <p> / </p>  
+                                   <div class="select last"> 
                                     <select name="year">
                                       <optgroup label="Year">
                                         <option>Year</option>
@@ -88,7 +89,7 @@
                               </dl>
 
 
-                              <dl>
+                              <dl class="description">
                                 <dt>
                                   <label for="description">Description</label>
                                 </dt>
@@ -97,14 +98,16 @@
                                 </dd>
                               </dl>
 
-                              <dl>
+                              <dl class="submit">
                                 <dt></dt>
                                 <dd>
                                   <input type="submit" value="Save">
                                   <input type="submit" value="Mark As Complete">
                                 </dd>
                               </dl>
+
                             </fieldset>
+                            </div>
                           </form>
 
                       </div>
