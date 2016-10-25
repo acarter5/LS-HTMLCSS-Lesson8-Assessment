@@ -257,7 +257,6 @@ input#mod_check {
 }
 
 div.modal {
-  visibility: hidden;
   position: absolute;
   top: 110px;
   left: 100px;
@@ -265,10 +264,11 @@ div.modal {
   box-sizing: border-box;
   padding: 35px 30px;
   z-index: 100;
+  display: none;
 }
 
-input#mod_check:checked + figure + div.modal {
-  visibility: visible;
+input#mod_check:checked + figure div.modal {
+  display: block;
 }
 
 input#mod_check:checked + figure:before {
