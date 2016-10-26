@@ -270,11 +270,11 @@ div.modal {
   width: 576px;
 }
 
-input#mod_check:checked + figure div.modal {
+input#mod_check:checked + div.modal {
   display: block;
 }
 
-input#mod_check:checked + figure:before {
+input#mod_check:checked + div.modal + label div.background:before {
   position: fixed;
   top: 0;
   right: 0;
@@ -396,7 +396,13 @@ div.modal div.select:first-of-type {
   margin-left: 0;
 }
 
+div.modal ul li {
+  display: inline-block;
+}
 
+li.label {
+  width: 85px;
+}
 
 
 
